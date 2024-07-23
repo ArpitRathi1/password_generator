@@ -105,3 +105,16 @@ h1{
     color: var(--vb-yellow);
     font-size: 1.5rem;
 }
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.strength-container p{
+    color: var(--pl-white);
+    font-size: 1.5rem;
+}
