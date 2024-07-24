@@ -230,3 +230,12 @@ h1{
     transform-origin: bottom;
     transition: all 250ms ease-in-out;
 }
+
+.coptimg:hover{
+    cursor: pointer;
+}
+
+.tooltip.active{
+    opacity: 1;
+    transform: scale(1);
+}
