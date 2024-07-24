@@ -190,3 +190,17 @@ h1{
     outline:none;
     z-index:-1;
 }
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: var(--vb-yellow);
+    box-shadow: 0px 0px 20px 0px rgba(255,229,61,0.50);
+    transition: all 100ms ease-in;
+}
+
+.slider:focus{
+    border: 2px solid var(--vb-yellow); 
+}
