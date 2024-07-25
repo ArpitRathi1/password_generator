@@ -31,3 +31,8 @@ function setIndicator(color){
     indicator.style.backgroundColor=color;
     indicator.style.boxShadow =`0px 0px 12px 1px ${color}`
 }
+
+// generate a random integer value.
+function getRndInteger(min,max){
+    return Math.floor(Math.random()*(max-min)) + min
+}
