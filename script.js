@@ -25,3 +25,9 @@ function handleSlider(){
     const max=inputSlider.max;
     inputSlider.style.backgroundSize = ( (passwordLength - min)*100/(max - min)) + "%"
 }
+
+// change color of indicator.
+function setIndicator(color){
+    indicator.style.backgroundColor=color;
+    indicator.style.boxShadow =`0px 0px 12px 1px ${color}`
+}
