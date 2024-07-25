@@ -36,3 +36,8 @@ function setIndicator(color){
 function getRndInteger(min,max){
     return Math.floor(Math.random()*(max-min)) + min
 }
+
+// generate a random number between 0 to 9.
+function generateRandomNumber(){
+    return getRndInteger(0,9);
+}
