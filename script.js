@@ -41,3 +41,8 @@ function getRndInteger(min,max){
 function generateRandomNumber(){
     return getRndInteger(0,9);
 }
+
+// generate a random lower case alphabate using ASCII code
+function generateLowerCase(){
+    return String.fromCharCode(getRndInteger(97,123));
+}
