@@ -51,3 +51,9 @@ function generateLowerCase(){
 function generateUpperCase(){
     return String.fromCharCode(getRndInteger(65,91));
 }
+
+// generate a random symbol 
+function generateSymbol(){
+    let randNum=getRndInteger(0,symbols.length);
+    return symbols.charAt(randNum);
+}
