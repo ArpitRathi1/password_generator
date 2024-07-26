@@ -46,3 +46,8 @@ function generateRandomNumber(){
 function generateLowerCase(){
     return String.fromCharCode(getRndInteger(97,123));
 }
+
+// generate a random upper case alphabate using ASCII code
+function generateUpperCase(){
+    return String.fromCharCode(getRndInteger(65,91));
+}
