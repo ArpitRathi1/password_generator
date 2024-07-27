@@ -93,3 +93,18 @@ async function copyContent(){
         copyMsg.classList.remove("active")
     },2000)
 }
+
+// to identify a particuler check box is checked or not.
+function handleCheckboxChange(){
+    checkCount=0;
+    allCheckBox.forEach((checkbox)=>{
+        if (checkbox.checked){
+            checkCount++;
+        }
+    })
+
+    if(passwordLength<checkCount){
+        passwordLength=checkCount;
+        handleSlider()
+    }
+}
