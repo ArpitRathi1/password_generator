@@ -137,3 +137,49 @@ copyBtn.addEventListener("click",()=>{
         copyContent()
     }
 })
+
+generateBtn.addEventListener("click",()=>{
+    // none of the checkbox is selected.
+    if (checkCount<=0) return;
+
+    if (passwordLength<checkCount){
+        passwordLength=checkCount;
+        handleSlider();
+    }
+
+    // remove old password.
+    password="";
+
+    let funcArr=[];
+    if (uppercaseCheck.checked){
+        funcArr.push(generateUpperCase);
+    }
+    if (lowercaseCheck.checked){
+        funcArr.push(generateLowerCase);
+    }
+    if (numberCheck.checked){
+        funcArr.push(generateRandomNumber);
+    }
+    if (symbolCheck.checked){
+        funcArr.push(generateSymbol);
+    }
+
+    // compulsory addition
+    for (let i=0; i<funcArr.length; i++){
+        password += funcArr[i]();
+    }
+
+    // remaining addition.
+    for (let i=0;i<passwordLength-funcArr.length;i++){
+        let randIndex=getRndInteger(0,funcArr.length);
+        password += funcArr[randIndex]();
+    }
+
+    // shuffle the password.
+    password = shufflePassword(Array.from(password));
+
+    // displaying password
+    passwordDisplay.value=password
+    // calculate strength
+    calcStrength();
+})
