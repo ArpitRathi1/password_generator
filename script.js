@@ -122,3 +122,12 @@ function shufflePassword(array){
     array.forEach((el)=>(str += el));
     return str
 }
+
+allCheckBox.forEach((checkbox)=>{
+    checkbox.addEventListener("change",handleCheckboxChange)
+})
+
+inputSlider.addEventListener("input",(e)=>{
+    passwordLength=e.target.value;
+    handleSlider();
+})
