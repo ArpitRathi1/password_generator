@@ -34,3 +34,10 @@ Welcome to the Password Generator repository! This project is a simple yet power
    ```
 
 3. Open the `index.html` file in your favorite web browser to use the password generator.
+
+## Usage
+
+1. Open the `index.html` file in a web browser.
+2. Use the interface to customize the length and character types of your password.
+3. Click the "Generate Password" button to create a new password.
+4. Copy the generated password to your clipboard using the "Copy" button.
