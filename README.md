@@ -19,3 +19,18 @@ Welcome to the Password Generator repository! This project is a simple yet power
 - Simple and intuitive interface
 - Fast and lightweight
 
+## Installation
+
+1. Clone the repository to your local machine:
+
+   ```bash
+   git clone https://github.com/ArpitRathi1/password_generator.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd password_generator
+   ```
+
+3. Open the `index.html` file in your favorite web browser to use the password generator.
