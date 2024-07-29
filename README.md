@@ -41,3 +41,13 @@ Welcome to the Password Generator repository! This project is a simple yet power
 2. Use the interface to customize the length and character types of your password.
 3. Click the "Generate Password" button to create a new password.
 4. Copy the generated password to your clipboard using the "Copy" button.
+
+## Contributing
+
+We welcome contributions to the Password Generator project! If you have ideas for new features or improvements, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch with a descriptive name for your feature or fix.
+3. Make your changes and commit them with clear and concise messages.
+4. Push your changes to your fork.
+5. Submit a pull request to the main repository.
